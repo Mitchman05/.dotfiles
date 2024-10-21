@@ -1,3 +1,6 @@
 # Don't track monitor rules
 /hypr/.config/hypr/hyprland/monitor.conf
 monitor.conf
+
+# Don't track local settings for hyprland
+local.conf
