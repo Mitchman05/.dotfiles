@@ -1,0 +1,2 @@
+# Don't track monitor rules
+/hypr/.config/hypr/hyprland/monitor.conf
