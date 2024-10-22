@@ -30,7 +30,7 @@
   
   "custom/icon": {
     "format": "󰣇",
-    "on-click": "hyprctl dispatch exec "rofi -show drun",
+    "on-click": "rofi -show drun",
     "tooltip": false 
   },
 
