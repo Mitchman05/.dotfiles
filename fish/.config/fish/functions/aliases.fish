@@ -1,6 +1,6 @@
 # Easy aliases
-alias neofetch = "fastfetch"
-alias ls = "lsd"
+alias neofetch="fastfetch"
+alias ls="lsd"
 
 # More complicated ones
 function cat --wraps=bat --description 'alias cat=bat'
