@@ -25,6 +25,7 @@
     "tray",
     "custom/updates",
     "custom/notification",
+	"custom/idle_inhibitor",
     "custom/power",
   ],
   
