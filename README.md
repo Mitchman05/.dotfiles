@@ -14,5 +14,6 @@
 - hypridle
 - hyprpaper
 - hyprpolkitagent
+- socat
 - swwww
 - udiskie
