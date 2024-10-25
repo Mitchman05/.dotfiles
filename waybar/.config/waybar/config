@@ -30,7 +30,7 @@
   
   "custom/icon": {
     "format": "󰣇",
-    "on-click": "rofi -show drun",
+    "on-click": "ags -t dashboardmenu",
     "tooltip": false 
   },
 
