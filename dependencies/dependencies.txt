@@ -17,6 +17,8 @@ kitty
 lsd
 noto-fonts-cjk
 nvim
+nwg-look
+nwg-menu
 obsidian
 oft-monaspace-nerd
 socat
