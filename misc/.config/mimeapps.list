@@ -1,0 +1,9 @@
+[Added Associations]
+application/pdf=zathura-2.desktop;zathura.desktop;firefox-2.desktop;
+image/jpeg=qimgv-6.desktop;qimgv-5.desktop;qimgv-3.desktop;
+image/png=qimgv-7.desktop;qimgv-4.desktop;qimgv-2.desktop;
+
+[Default Applications]
+application/pdf=zathura-2.desktop;
+image/jpeg=qimgv-6.desktop;
+image/png=qimgv-7.desktop;
