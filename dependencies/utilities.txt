@@ -1,0 +1,7 @@
+bat
+cbonsai
+cmatrix
+fastfetch
+lsd
+udiskie
+xwaylandvideobridge

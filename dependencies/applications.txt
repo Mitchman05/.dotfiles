@@ -1,0 +1,10 @@
+anki
+discord
+easyeffects
+gamescope
+libreoffice-fresh
+mpv
+obsidian
+qimgv
+steam
+zathura
