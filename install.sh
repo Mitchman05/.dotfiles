@@ -16,4 +16,4 @@ mkdir -p /usr/share/sddm
 stow --adopt -t /usr/share/sddm sddm
 
 # Force dotfiles to revert to repo
-git restore
+git restore .
