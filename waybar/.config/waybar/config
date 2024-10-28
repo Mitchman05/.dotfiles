@@ -175,7 +175,7 @@
 
   "custom/power": {
     "format": "󰐥",
-    "on-click": "~/.config/rofi/bin/power.sh",
+    "on-click": "~/.scripts/eww/powermenu.sh",
     "tooltip": false,
   },
   "custom/notification": {
