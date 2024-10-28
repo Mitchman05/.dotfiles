@@ -1,6 +1,6 @@
 .powermenu {
-  background-color: $bg;
-  color: $fg;
+  background-color: $base;
+  color: $surface0;
   padding: 20px;
   font-family: Iosevka Nerd Font;
   font-size: 70px;
@@ -8,8 +8,8 @@
   button {
     border-radius: 12px;
     transition: all ease .2s;
-    &:hover { background-color: $bgSecondary; }
-    &:active { background-color: $bg; }
+    &:hover { background-color: $surface2; }
+    &:active { background-color: $surface0; }
     .content {
       border-radius: 4px;
       padding: 0px 15px 0px 5px;
@@ -21,5 +21,4 @@
 }
 
 .powermenu-clickhandler {
-  background-color: black;
 }

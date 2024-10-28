@@ -5,15 +5,15 @@
        :spacing 20
     (button :class "shutdown"
             :onclick "shutdown"
-      (label :text "襤" :class "content")
+      (label :text "󰤆" :class "content")
     )
     (button :class "reboot"
             :onclick "systemctl reboot"
-      (label :text "勒" :class "content")
+      (label :text "" :class "content")
     )
     (button :class "logout"
             :onclick "hyprctl dispatch exit"
-      (label :text "" :class "content")
+      (label :text "󰍃" :class "content")
     )
   )
 )
@@ -30,7 +30,7 @@
   :geometry (geometry :x "0px"
                       :y "0px"
                       :width "100%"
-                      :height "100%"
+                      :height "110%"
                       :anchor "center")
   :wm-ignore true
 (powermenu-clickhandler))
