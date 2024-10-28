@@ -8,7 +8,7 @@
   button {
     border-radius: 12px;
     transition: all ease .2s;
-    &:hover { background-color: $surface2; }
+    &:hover { background-color: $surface1; }
     &:active { background-color: $surface0; }
     .content {
       border-radius: 4px;
@@ -16,7 +16,7 @@
     }
   }
   .shutdown { color: $red; }
-  .reboot { color: $magenta; }
+  .reboot { color: $lavender; }
   .logout { color: $yellow; }
 }
 
