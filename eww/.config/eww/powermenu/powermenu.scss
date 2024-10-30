@@ -4,7 +4,10 @@
   padding: 20px;
   font-family: Iosevka Nerd Font;
   font-size: 70px;
-  border-radius: 4px;
+  border-radius: 12px;
+  border-color: $mauve;
+  border-width: 2px;
+  border-style: solid;
   button {
     border-radius: 12px;
     transition: all ease .2s;
@@ -12,12 +15,16 @@
     &:active { background-color: $surface0; }
     .content {
       border-radius: 4px;
-      padding: 0px 15px 0px 5px;
+      padding: 0px 15px 0px 15px;
     }
   }
   .shutdown { color: $red; }
-  .reboot { color: $lavender; }
+  .reboot { color: $peach; }
   .logout { color: $yellow; }
+}
+
+.powermenu:hover {
+  border-color: #595959;
 }
 
 .powermenu-clickhandler {
