@@ -5,7 +5,7 @@
        :spacing 20
 	   :active true
     (button :class "shutdown"
-            :onclick "shutdown"
+            :onclick "systemctl shutdown"
       (label :text "󰤆" :class "content")
     )
     (button :class "reboot"
@@ -15,6 +15,10 @@
     (button :class "logout"
             :onclick "hyprctl dispatch exit"
       (label :text "󰍃" :class "content")
+    )
+    (button :class "sleep"
+            :onclick "systemctl suspend"
+      (label :text "" :class "content")
     )
   )
 )
@@ -40,7 +44,7 @@
   :monitor 0
   :geometry (geometry :x "0px"
                       :y "0px"
-                      :width "500px"
+                      :width "600px"
                       :height "150px"
                       :anchor "center")
   :stacking "overlay"
