@@ -3,5 +3,8 @@ cbonsai
 cmatrix
 fastfetch
 lsd
+pactl
+pamixer
+pavucontrol
 udiskie
 xwaylandvideobridge
