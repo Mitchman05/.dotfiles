@@ -17,7 +17,7 @@
       (label :text "󰍃" :class "content")
     )
     (button :class "sleep"
-            :onclick "systemctl suspend"
+            :onclick "systemctl suspend && eww close powermenu powermenu-clickhandler"
       (label :text "" :class "content")
     )
   )
