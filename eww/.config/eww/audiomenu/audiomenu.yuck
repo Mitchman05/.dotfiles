@@ -14,27 +14,19 @@
                 (label :text " ")
             )
         )
-        (
-            box :class "body" :space-evenly "false" :orientation "v"
-            (
-                button 
-                :class "audio-choice-button"
-                :vexpand "false"
-                (label :text "󰓃   Speakers")
-            )
-            (
-                button 
-                :class "audio-choice-button"
-                :hexpand "false"
-                (label :text "󰋋   Headphones")
-            )
-            (
-                button 
-                :class "audio-choice-button" 
-                :hexpand "false"
-                (label :text "    PS5 Controller")
-            )
-        )
+		(
+			box :class "volume-control" :space-evently false :orientation "v"
+			(
+				scale
+				:class "volume-slider"
+				:value volume
+				:onchange "pamixer --set-volume {}"
+				:orientation "h"
+				:max 100
+				:min 0
+			)
+		)
+		(audiooutbuttons)
     )
 )
 

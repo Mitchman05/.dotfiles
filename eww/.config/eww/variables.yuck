@@ -7,8 +7,8 @@
 (defpoll completeday :interval "1h" "date '+%A, %d %B'")
 
 (defpoll volume_icon :interval "1s" "~/.config/eww/scripts/volume.sh icon")
-(defpoll volume :interval "1s" "~/.config/eww/scripts/volume.sh percentage")
-(defpoll volume_value :interval "1s" "~/.config/eww/scripts/volume.sh vol")
+(defpoll volume :interval "1s" "pamixer --get-volume")
+(defpoll volume_value :interval "1s" "~/.config/eww/scripts/volume.sh value")
 (defpoll is_muted :interval "1s" "~/.config/eww/scripts/volume.sh muted")
 
 (defpoll lithour :interval "30m" "date +%H")

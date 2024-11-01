@@ -4,3 +4,6 @@ monitor.conf
 
 # Don't track local settings for hyprland
 local.conf
+
+# Don't track local settings for audio outputs
+audiooutbuttons.yuck

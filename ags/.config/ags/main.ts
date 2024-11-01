@@ -28,10 +28,6 @@ App.config({
         "datemenu": options.transition.value,
     },
     windows: () => [
-        ...forMonitors(Bar),
-        ...forMonitors(NotificationPopups),
-        ...forMonitors(ScreenCorners),
-        ...forMonitors(OSD),
         Launcher(),
         Overview(),
         PowerMenu(),

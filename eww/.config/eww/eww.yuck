@@ -4,3 +4,4 @@
 (include "date/date.yuck")
 (include "actions/actions.yuck")
 (include "audiomenu/audiomenu.yuck")
+(include "audiomenu/audiooutbuttons.yuck")

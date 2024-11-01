@@ -17,6 +17,19 @@
   margin-left: 1px;
 }
 
+scale trough {
+  all: unset;
+  background-color: $overlay0;
+  border-radius: 5px;
+  min-height: 10px;
+  margin: .3rem 0 .3rem 0;
+}
+
+.volume-slider trough highlight {
+  background-color: $yellow;
+  border-radius: 5px;
+}
+
 .audio-choice-button {
   margin-top: 8px;
   background-color: $surface0;
