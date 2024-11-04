@@ -17,11 +17,14 @@
   margin-left: 1px;
 }
 
+.volume-button
+
 scale trough {
   all: unset;
   background-color: $overlay0;
   border-radius: 5px;
   min-height: 10px;
+  min-width: 100px;
   margin: .3rem 0 .3rem 0;
 }
 

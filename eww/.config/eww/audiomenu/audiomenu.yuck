@@ -15,7 +15,13 @@
             )
         )
 		(
-			box :class "volume-control" :space-evently false :orientation "v"
+			box :class "volume-control" :orientation "h"
+			(
+				button
+				:class "volume-button"
+				:onclick "pamixer -t"
+				(label :text " ")
+			)
 			(
 				scale
 				:class "volume-slider"
