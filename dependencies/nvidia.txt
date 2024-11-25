@@ -1,5 +1,5 @@
 egl-wayland
 libva-nvidia-driver
 lib32-nvidia-utils
-nvidia-dkms
+nvidia-open
 nvidia-utils

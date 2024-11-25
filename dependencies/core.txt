@@ -8,7 +8,7 @@ hyprland
 hyprpaper
 hyprpolkitagent
 kitty
-nvim
+neovim
 nwg-look
 nwg-menu
 oft-monaspace-nerd
