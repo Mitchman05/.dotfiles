@@ -18,7 +18,7 @@ vim.opt.rtp:prepend(lazypath)
 require("lazy").setup("plugins")
 
 require("catppuccin").setup({
-    flavour = "auto", -- latte, frappe, macchiato, mocha
+    flavour = "mocha", -- latte, frappe, macchiato, mocha
     background = { -- :h background
         light = "latte",
         dark = "mocha",
@@ -61,6 +61,26 @@ require("catppuccin").setup({
             enabled = true,
             indentscope_color = "",
         },
+		native_lsp = {
+			enabled = true,
+			virtual_text = {
+				errors = { "italic" },
+				hints = { "italic" },
+				warnings = { "italic" },
+				information = { "italic" },
+				ok = { "italic" },
+			},
+			underlines = {
+				errors = { "underline" },
+				hints = { "underline" },
+				warnings = { "underline" },
+				information = { "underline" },
+				ok = { "underline" },
+			},
+			inlay_hints = {
+				background = false,
+			},
+		},
         -- For more plugins integrations please scroll down (https://github.com/catppuccin/nvim#integrations)
     },
     custom_highlights = function(colors)
@@ -73,8 +93,30 @@ require("catppuccin").setup({
 -- setup must be called before loading
 vim.cmd.colorscheme "catppuccin"
 
+vim.lsp.inlay_hint.enable(true)
+
 vim.wo.number = true
 vim.wo.relativenumber = true
 
 vim.opt["tabstop"] = 4
 vim.opt["shiftwidth"] = 4
+
+local cmp = require('cmp')
+
+cmp.setup({
+  sources = {
+    {name = 'nvim_lsp'},
+  },
+  snippet = {
+    expand = function(args)
+      -- You need Neovim v0.10 to use vim.snippet
+      vim.snippet.expand(args.body)
+    end,
+  },
+  mapping = cmp.mapping.preset.insert({}),
+})
+
+require('mini.surround').setup()
+require('mini.comment').setup()
+require('mini.surround').setup()
+require('mini.pairs').setup()
