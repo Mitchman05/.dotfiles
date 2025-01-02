@@ -104,7 +104,7 @@
   "wireplumber": {
     "format": "  {volume}%",
     "format-muted": "  {volume}%",
-    "on-click": "ags -t quicksettings",
+    "on-click": "pamixer -t",
     "max-volume": 100,
     "scroll-step": 0.5,
 	"reverse-scrolling": 1
