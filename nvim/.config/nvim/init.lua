@@ -1,6 +1,5 @@
-vim.keymap.set('n', '<space>', '<leader>')
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
-vim.g.mapleader = ' '
+vim.g.mapleader = " "
 
 if not (vim.uv or vim.loop).fs_stat(lazypath) then
   vim.fn.system({
@@ -17,21 +16,9 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup("plugins")
 
+require("lsp_conf")
 require("completions")
-
 require("themes")
-
-vim.lsp.inlay_hint.enable(true)
-
-vim.wo.number = true
-vim.wo.relativenumber = true
-
-vim.opt["tabstop"] = 4
-vim.opt["shiftwidth"] = 4
-
-require('mini.surround').setup()
-require('mini.comment').setup()
-require('mini.surround').setup()
-require('mini.pairs').setup()
-
-require('lspconfig').clangd.setup{}
+require("navigation")
+require("editor")
+require("appearance")
