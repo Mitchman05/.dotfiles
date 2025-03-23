@@ -12,7 +12,7 @@ cmp.setup({
   },
   mapping = {
     ['<CR>'] = function(fallback)
-		if cmp.visible() then
+		if cmp.visible() and cmp.get_active_entry() then
 			cmp.confirm()
 		else
 			fallback()
@@ -33,7 +33,7 @@ cmp.setup({
 		end
 	end,
     ['<ESC>'] = function(fallback)
-		if cmp.visible() then
+		if cmp.visible() and cmp.get_active_entry() then
 			cmp.close()
 		else
 			fallback()
