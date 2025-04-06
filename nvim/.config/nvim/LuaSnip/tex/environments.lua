@@ -96,7 +96,7 @@ return {
       [[
         <>\begin{pmatrix}
             <>
-        \end{pmatrix}<>
+        \end{pmatrix}
       ]],
       {
         f( function(_, snip) return snip.captures[1] end),

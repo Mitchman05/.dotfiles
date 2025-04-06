@@ -1,4 +1,4 @@
-local line_start = requre("luasnip.extras.conditions.expand").line_start
+local line_start = require("luasnip.extras.conditions.expand").line_start
 
 return {
   -- Preamble snipppets
