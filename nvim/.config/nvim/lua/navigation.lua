@@ -3,6 +3,7 @@ require("fzf-lua").setup{
   -- fzf_bin = ...,
   -- each of these options can also be passed as function that return options table
   -- e.g. winopts = function() return { ... } end
+  "fzf-native",
   winopts = {
 	preview = {
 		default = "bat",

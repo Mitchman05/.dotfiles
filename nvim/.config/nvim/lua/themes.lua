@@ -37,6 +37,7 @@ require("catppuccin").setup({
         neotree = true,
         treesitter = true,
         notify = false,
+		fzf = true,
         mini = {
             enabled = true,
             indentscope_color = "",
@@ -61,16 +62,17 @@ require("catppuccin").setup({
 				background = false,
 			},
 		},
-	indent_blankline = {
-		enabled = true,
-		scope_color = "", -- catppuccin color (eg. `lavender`) Default: text
-		colored_indent_levels = true,
-	},
+		indent_blankline = {
+			enabled = true,
+			scope_color = "", -- catppuccin color (eg. `lavender`) Default: text
+			colored_indent_levels = true,
+		},
         -- For more plugins integrations please scroll down (https://github.com/catppuccin/nvim#integrations)
     },
     custom_highlights = function(colors)
 		return {
 			LineNr = { fg = '#7f849c' },
+			NormalFloat = {bg = '#1e1e2e'}
 		}
     end
 })

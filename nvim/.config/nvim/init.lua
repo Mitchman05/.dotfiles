@@ -1,5 +1,7 @@
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
+
 vim.g.mapleader = " "
+vim.g.maplocalleader = " "
 
 if not (vim.uv or vim.loop).fs_stat(lazypath) then
   vim.fn.system({
@@ -22,3 +24,4 @@ require("themes")
 require("navigation")
 require("editor")
 require("appearance")
+require("keymaps")
