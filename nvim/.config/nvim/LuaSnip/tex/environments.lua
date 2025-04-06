@@ -20,7 +20,7 @@ return {
     )
   ),
 
-  s({trig = "([^%a])nn", dscr = "A LaTeX equation environment",
+  s({trig = "([^%a?])nn", dscr = "A LaTeX equation environment",
     snippetType = "autosnippet", regTrig = true, wordTrig = false},
     fmta(
       [[
@@ -30,8 +30,8 @@ return {
         \end{equation*}
       ]],
       {
-        f( function(_, snip) return snip.captures[1] end),
-        d(0, get_visual),
+        f( function(_, snip) return snip.captures[1] end ),
+        d(1, get_visual),
       }
     )
   ),
@@ -85,7 +85,7 @@ return {
 
   s(
     {
-      trig = "([^%a^%\\])pm",
+      trig = "([^%\\?])pm",
       dscr = "Pmatrix environment",
       regTrig = true,
       wordTrig = false,
@@ -107,7 +107,7 @@ return {
 
   s(
     {
-      trig = "prf",
+      trig = "([^%a?])prf",
       dscr = "Amsmath proof environment",
       regTrig = true,
       wordTrig = false,
@@ -116,11 +116,13 @@ return {
     },
     fmta(
       [[
+        <>
         \begin{proof}
             <>
         \end{proof}
       ]],
       {
+        f( function(_, snip) return snip.captures[1] end),
         d(0, get_visual),
       }
     )

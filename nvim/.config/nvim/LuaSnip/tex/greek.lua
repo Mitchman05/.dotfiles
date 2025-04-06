@@ -257,7 +257,7 @@ return {
 
   s(
     {
-      trig=";t",
+      trig=";o",
       snippetType = "autosnippet",
       dscr = "\\tau",
       condition = tex_utils.in_mathzone,
@@ -329,7 +329,7 @@ return {
 
   s(
     {
-      trig=";w",
+      trig=";o",
       snippetType = "autosnippet",
       dscr = "\\omega",
       condition = tex_utils.in_mathzone,
@@ -341,7 +341,7 @@ return {
 
   s(
     {
-      trig=";W",
+      trig=";O",
       snippetType = "autosnippet",
       dscr = "\\Omega",
       condition = tex_utils.in_mathzone,

@@ -12,7 +12,7 @@ return {
       snippetType = "autosnippet"
     },
     fmta(
-      "<>\\texttt{<>}",
+      "<>\\texttt{<>} ",
       {
         f( function(_, snip) return snip.captures[1] end),
         d(1, get_visual),
@@ -29,7 +29,7 @@ return {
       snippetType = "autosnippet"
     },
     fmta(
-      "<>\\textit{<>}",
+      "<>\\textit{<>} ",
       {
         f( function(_, snip) return snip.captures[1] end),
         d(1, get_visual),
@@ -46,7 +46,7 @@ return {
       snippetType = "autosnippet"
     },
     fmta(
-      "<>\\textbf{<>}",
+      "<>\\textbf{<>} ",
       {
         f( function(_, snip) return snip.captures[1] end),
         d(1, get_visual),
@@ -63,7 +63,7 @@ return {
       snippetType = "autosnippet"
     },
     fmta(
-      "<>\\underline{<>}",
+      "<>\\underline{<>} ",
       {
         f( function(_, snip) return snip.captures[1] end),
         d(1, get_visual),
@@ -81,7 +81,7 @@ return {
       condition = tex_utils.in_mathzone
     },
     fmta(
-      "<>\\text{<>}",
+      "<>\\text{<>} ",
       {
         f( function(_, snip) return snip.captures[1] end),
         d(1, get_visual),
@@ -99,7 +99,7 @@ return {
       condition = tex_utils.in_mathzone
     },
     fmta(
-      "<>\\mathbf{<>}",
+      "<>\\mathbf{<>} ",
       {
         f( function(_, snip) return snip.captures[1] end),
         d(1, get_visual),
@@ -117,7 +117,7 @@ return {
       condition = tex_utils.in_mathzone
     },
     fmta(
-      "<>\\mathbb{<>}",
+      "<>\\mathbb{<>} ",
       {
         f( function(_, snip) return snip.captures[1] end),
         d(1, get_visual),

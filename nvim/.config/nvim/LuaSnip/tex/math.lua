@@ -21,7 +21,7 @@ return {
   
   s(
     {
-      trig = "([^%a])ee",
+      trig = "([^%a?])ee",
       regTrig = true,
       wordTrig = false,
       condition = tex_utils.in_mathzone,
@@ -41,11 +41,11 @@ return {
     {
       trig = "([^%a])mm",
       wordTrig = false,
-      regTrig = true,
+      trigEngine = "pattern",
       snippetType = "autosnippet",
     },
     fmta(
-      "<>$<>$",
+      "<>$<>$ ",
       {
         f( function(_, snip) return snip.captures[1] end),
         d(1, get_visual),

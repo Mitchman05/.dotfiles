@@ -13,3 +13,6 @@ map({'i', 's'}, 'jk', function()
   end, opts
 )
 
+-- Map <Leader>L to reload the luasnip snippets
+map('n', '<Leader>L', '<Cmd>lua require("luasnip.loaders.from_lua").load({paths = "~/.config/nvim/LuaSnip/"})<CR>')
+

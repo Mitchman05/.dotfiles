@@ -9,6 +9,7 @@ return {
       trig = "template",
       dscr = "Basic Template",
       condition = line_begin,
+      snippetType = "autosnippet"
     },
     fmta([[
       \documentclass{article}
@@ -35,8 +36,9 @@ return {
       trig = "theorems",
       dscr = "Maths environments (e.g. lemma, proof, etc)",
       condition = line_begin,
+      snippetType = "autosnippet"
     },
-    {t(
+    fmta(
       [[
       \newtheorem{theorem}{Theorem}[section]
       \newtheorem{corollary}{Corollary}[theorem]
@@ -47,8 +49,8 @@ return {
 
       \theoremstyle{remark}
       \newtheorem*{remark}{Remark}
-      ]]
-    )}
+      ]],{}
+    )
   ),
 
   s(
@@ -56,6 +58,7 @@ return {
       trig = "vccommands",
       dscr = "Vector calculus commands",
       condition = line_begin,
+      snippetType = "autosnippet"
     },
     {t(
       [[
