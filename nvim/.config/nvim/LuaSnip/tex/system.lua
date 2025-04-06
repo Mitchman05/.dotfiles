@@ -26,28 +26,32 @@ return {
   
 
   -- Sectioning snippets
-  s({trig = "h1", dcsr = "New section", condition = line_start},
+  s({trig = "h1", dcsr = "New section", condition = line_start,
+    snippetType = "autosnippet"},
     fmta(
       "\\section{<>}",
       {i(1)}
     )
   ), 
 
-  s({trig = "h2", dcsr = "New subsection", condition = line_start},
+  s({trig = "h2", dcsr = "New subsection", condition = line_start,
+    snippetType = "autosnippet"},
     fmta(
       "\\subsection{<>}",
       {i(1)}
     )
   ), 
 
-  s({trig = "h3", dcsr = "New subsubsection", condition = line_start},
+  s({trig = "h3", dcsr = "New subsubsection", condition = line_start,
+    snippetType = "autosnippet"},
     fmta(
       "\\subsubsection{<>}",
       {i(1)}
     )
   ), 
 
-  s({trig = "np", dcsr = "\\newpage", condition = line_start},
+  s({trig = "np", dcsr = "\\newpage", condition = line_start,
+    snippetType = "autosnippet"},
     {t("\\newpage")}
   ), 
 
