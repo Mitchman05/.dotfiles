@@ -108,24 +108,40 @@ return {
 
   s(
     {
-      trig = "([^%a?])prf",
+      trig = "prf",
       dscr = "Amsmath proof environment",
-      regTrig = true,
-      wordTrig = false,
       snippetType = "autosnippet",
       condition = line_begin
     },
     fmta(
       [[
-        <>
         \begin{proof}
             <>
         \end{proof}
       ]],
       {
-        f( function(_, snip) return snip.captures[1] end),
-        d(0, get_visual),
+        d(1, get_visual),
       }
     )
   ),
+
+  s(
+    {
+      trig = "tks",
+      dscr = "Tikz graphics environment",
+      snippetType = "autosnippet",
+      condition = line_begin
+    },
+    fmta(
+      [[
+        \begin{tikzpicture}
+            <>
+        \end{tikzpicture}
+      ]],
+      {
+        d(1, get_visual),
+      }
+    )
+  ),
+
 }

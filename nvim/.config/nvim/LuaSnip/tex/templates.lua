@@ -12,11 +12,12 @@ return {
       snippetType = "autosnippet"
     },
     fmta([[
-      \documentclass{article}
+      \documentclass[12pt]{article}
       \usepackage{graphicx}
-      \usepackage{geometry}
+      \usepackage[margin=2.7cm,a4paper]{geometry}
       \usepackage{latexsym,amsfonts,amssymb,amsthm,amsmath}
       \usepackage{hyperref}
+      \usepackage{tikz}
 
       \title{}
       \author{}
