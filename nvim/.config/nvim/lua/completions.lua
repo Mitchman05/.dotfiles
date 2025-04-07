@@ -66,7 +66,7 @@ cmp.setup({
 		end
 	end,
 
-    ['<ESC>'] = function(fallback)
+  ['<ESC>'] = function(fallback)
 		if cmp.visible() and cmp.get_active_entry() then
 			cmp.close()
 		else

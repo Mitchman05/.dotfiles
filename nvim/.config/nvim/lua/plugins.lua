@@ -17,9 +17,9 @@ return {
 		version = false
 	},
   {
-      'mrcjkb/rustaceanvim',
-      version = '^5', -- Recommended
-      lazy = false, -- This plugin is already lazy
+    'mrcjkb/rustaceanvim',
+    version = '^5', -- Recommended
+    lazy = false, -- This plugin is already lazy
   },
 	{
 	  "ibhagwan/fzf-lua",
@@ -30,27 +30,11 @@ return {
 	  opts = {}
 	},
 	{
-	  "nvim-neo-tree/neo-tree.nvim",
-	  branch = "v3.x",
-	  dependencies = {
-		"nvim-lua/plenary.nvim",
-		"nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
-		"MunifTanjim/nui.nvim",
-		-- {"3rd/image.nvim", opts = {}}, -- Optional image support in preview window: See `# Preview Mode` for more information
-	  },
-	  lazy = false, -- neo-tree will lazily load itself
-	  ---@module "neo-tree"
-	  ---@type neotree.Config?
-	  opts = {
-		-- fill any relevant options here
-    },
-	},
-	{
-      "lukas-reineke/indent-blankline.nvim",
-      main = "ibl",
-      ---@module "ibl"
-      ---@type ibl.config
-      opts = {},
+    "lukas-reineke/indent-blankline.nvim",
+    main = "ibl",
+    ---@module "ibl"
+    ---@type ibl.config
+    opts = {},
     },
     {
       "L3MON4D3/LuaSnip",

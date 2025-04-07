@@ -94,7 +94,8 @@ return {
     },
     fmta(
       [[
-        <>\begin{pmatrix}
+        <>
+        \begin{pmatrix}
             <>
         \end{pmatrix}
       ]],

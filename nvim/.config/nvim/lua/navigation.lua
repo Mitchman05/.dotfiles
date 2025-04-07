@@ -28,14 +28,3 @@ actions = {
 },
 
 vim.api.nvim_set_keymap("n", "<C-/>", "<CMD>FzfLua files<CR>", {})
-
-require("neo-tree").setup{
-	event_handlers = {
-	  {
-		event = "file_open_requested",
-		handler = function()
-		  require("neo-tree.command").execute({ action = "close" })
-		end
-	  },
-	}
-}
