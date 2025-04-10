@@ -9,10 +9,11 @@ return {
       dscr = "\\texttt{} (monospace)",
       regTrig = true,
       wordTrig = false,
-      snippetType = "autosnippet"
+      snippetType = "autosnippet",
+      conditions = not tex_utils.in_mathzone,
     },
     fmta(
-      "<>\\texttt{<>} ",
+      "<>\\texttt{<>}",
       {
         f( function(_, snip) return snip.captures[1] end),
         d(1, get_visual),
@@ -29,7 +30,7 @@ return {
       snippetType = "autosnippet"
     },
     fmta(
-      "<>\\textit{<>} ",
+      "<>\\textit{<>}",
       {
         f( function(_, snip) return snip.captures[1] end),
         d(1, get_visual),
@@ -43,10 +44,11 @@ return {
       dscr = "\\textbf{}",
       regTrig = true,
       wordTrig = false,
-      snippetType = "autosnippet"
+      snippetType = "autosnippet",
+      conditions = not tex_utils.in_mathzone
     },
     fmta(
-      "<>\\textbf{<>} ",
+      "<>\\textbf{<>}",
       {
         f( function(_, snip) return snip.captures[1] end),
         d(1, get_visual),
@@ -63,7 +65,7 @@ return {
       snippetType = "autosnippet"
     },
     fmta(
-      "<>\\underline{<>} ",
+      "<>\\underline{<>}",
       {
         f( function(_, snip) return snip.captures[1] end),
         d(1, get_visual),
@@ -73,17 +75,14 @@ return {
 
   s(
     {
-      trig = "([^%a])tt",
+      trig = "mtt",
       dscr = "\\text{} (math environment)",
-      regTrig = true,
-      wordTrig = false,
       snippetType = "autosnippet",
       condition = tex_utils.in_mathzone
     },
     fmta(
-      "<>\\text{<>} ",
+      "\\text{<>}",
       {
-        f( function(_, snip) return snip.captures[1] end),
         d(1, get_visual),
       }
     )
@@ -91,17 +90,29 @@ return {
 
   s(
     {
-      trig = "([^%a])mbf",
+      trig = "trm",
+      dscr = "\\textrm{} (math environment)",
+      snippetType = "autosnippet",
+      condition = tex_utils.in_mathzone
+    },
+    fmta(
+      "\\textrm{<>}",
+      {
+        d(1, get_visual),
+      }
+    )
+  ),
+
+  s(
+    {
+      trig = "bf",
       dscr = "\\mathbf{}",
-      regTrig = true,
-      wordTrig = false,
       snippetType = "autosnippet",
       condition = tex_utils.in_mathzone
     },
     fmta(
-      "<>\\mathbf{<>} ",
+      "\\mathbf{<>}",
       {
-        f( function(_, snip) return snip.captures[1] end),
         d(1, get_visual),
       }
     )
@@ -109,17 +120,14 @@ return {
 
   s(
     {
-      trig = "([^%a])mbf",
+      trig = "bb",
       dscr = "\\mathbb{}",
-      regTrig = true,
-      wordTrig = false,
       snippetType = "autosnippet",
       condition = tex_utils.in_mathzone
     },
     fmta(
-      "<>\\mathbb{<>} ",
+      "\\mathbb{<>}",
       {
-        f( function(_, snip) return snip.captures[1] end),
         d(1, get_visual),
       }
     )

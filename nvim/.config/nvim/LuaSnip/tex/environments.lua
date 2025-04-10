@@ -2,6 +2,7 @@ local helpers = require("luasnip-helper-funcs")
 local get_visual = helpers.get_visual
 local tex_utils = helpers.tex_utils
 local line_begin = require("luasnip.extras.conditions.expand").line_begin
+local line_end = require("luasnip.extras.conditions.expand").line_end
 
 return {
   s({trig = "env", snippetType = "autosnippet",
@@ -120,7 +121,83 @@ return {
         \end{proof}
       ]],
       {
-        d(1, get_visual),
+        i(0),
+      }
+    )
+  ),
+
+  s(
+    {
+      trig = "defn",
+      dscr = "Amsmath solution environment",
+      snippetType = "autosnippet",
+      condition = line_begin
+    },
+    fmta(
+      [[
+        \begin{definition}
+            <>
+        \end{definition}
+      ]],
+      {
+        i(0),
+      }
+    )
+  ),
+
+  s(
+    {
+      trig = "soln",
+      dscr = "Amsmath solution environment",
+      snippetType = "autosnippet",
+      condition = line_begin
+    },
+    fmta(
+      [[
+        \begin{solution}
+            <>
+        \end{solution}
+      ]],
+      {
+        i(0),
+      }
+    )
+  ),
+
+  s(
+    {
+      trig = "thm",
+      dscr = "Amsmath theorem environment",
+      snippetType = "autosnippet",
+      condition = line_begin
+    },
+    fmta(
+      [[
+        \begin{theorem}
+            <>
+        \end{theorem}
+      ]],
+      {
+        i(0),
+      }
+    )
+  ),
+
+  s(
+    {
+      trig = "rmk",
+      dscr = "Amsmath remark environment",
+      snippetType = "autosnippet",
+      condition = line_begin
+    },
+    fmta(
+      [[
+        \begin{remark}
+            <>
+        \end{remark}
+      ]],
+      {
+        i(0),
       }
     )
   ),

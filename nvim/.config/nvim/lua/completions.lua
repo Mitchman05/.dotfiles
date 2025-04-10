@@ -30,8 +30,6 @@ cmp.setup({
 			else
 				cmp.confirm({select = true})
 			end
-    elseif luasnip.locally_jumpable(1) then
-      luasnip.jump(1)
 		else
 			fallback()
 		end

@@ -41,9 +41,10 @@ return {
     },
     fmta(
       [[
-      \newtheorem{theorem}{Theorem}[section]
-      \newtheorem{corollary}{Corollary}[theorem]
+      \newtheorem*{theorem}{Theorem}[section]
+      \newtheorem*{corollary}{Corollary}[theorem]
       \newtheorem*{lemma}{Lemma}
+      \newtheorem*{solution}{Solution}
 
       \theoremstyle{definition}
       \newtheorem*{definition}{Definition}
