@@ -5,9 +5,15 @@ vim.opt.ignorecase = true
 vim.opt.smartcase = true
 
 require('mini.surround').setup()
-require('mini.comment').setup()
-require('mini.surround').setup()
-require('mini.pairs').setup()
+require('mini.comment').setup {
+  options = {
+    ignore_blank_line = true,
+  }
+}
+
+require("ultimate-autopair").setup();
+
+require("oil").setup()
 
 vim.api.nvim_create_autocmd("FileType", {
 	pattern = "lua",
