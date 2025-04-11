@@ -7,3 +7,6 @@ local.conf
 
 # Don't track local settings for audio outputs
 audiooutbuttons.yuck
+
+# Don't track lazy-nvim current package versions
+lazy-lock.json
