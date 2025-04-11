@@ -33,15 +33,16 @@ require("catppuccin").setup({
     color_overrides = {},
     default_integrations = true,
     integrations = {
-        cmp = true,
-        neotree = true,
-        treesitter = true,
-        notify = false,
-		fzf = true,
-        mini = {
-            enabled = true,
-            indentscope_color = "",
-        },
+      cmp = true,
+      neotree = true,
+      treesitter = true,
+      notify = false,
+      fzf = true,
+      gitsigns = true,
+      mini = {
+          enabled = true,
+          indentscope_color = "",
+      },
 		native_lsp = {
 			enabled = true,
 			virtual_text = {
