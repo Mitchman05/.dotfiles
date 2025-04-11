@@ -85,6 +85,6 @@ map("t", "<ESC>", "<C-\\><C-n>", opts)
 
 -- Movement
 map("t", "<C-h>", "<CMD>wincmd h<CR>", opts)
-map("t", "<C-j>", "<CMD>wincmd h<CR>", opts)
-map("t", "<C-k>", "<CMD>wincmd h<CR>", opts)
-map("t", "<C-l>", "<CMD>wincmd h<CR>", opts)
+map("t", "<C-j>", "<CMD>wincmd j<CR>", opts)
+map("t", "<C-k>", "<CMD>wincmd k<CR>", opts)
+map("t", "<C-l>", "<CMD>wincmd l<CR>", opts)
