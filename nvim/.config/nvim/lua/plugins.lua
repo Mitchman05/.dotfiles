@@ -11,7 +11,7 @@ return {
   "nvim-treesitter/nvim-treesitter",
 	"hrsh7th/nvim-cmp",
 	"hrsh7th/cmp-nvim-lsp",
-    "nvim-lua/plenary.nvim",
+  "nvim-lua/plenary.nvim",
 	{
 		"echasnovski/mini.nvim",
 		version = false
@@ -35,15 +35,15 @@ return {
     ---@module "ibl"
     ---@type ibl.config
     opts = {},
-    },
-    {
-      "L3MON4D3/LuaSnip",
-      -- follow latest release.
-      version = "v2.*", -- Replace <CurrentMajor> by the latest released major (first number of latest release)
-      -- install jsregexp (optional!).
-      build = "make install_jsregexp",
-      event = "InsertEnter",
-    },
+  },
+  {
+    "L3MON4D3/LuaSnip",
+    -- follow latest release.
+    version = "v2.*", -- Replace <CurrentMajor> by the latest released major (first number of latest release)
+    -- install jsregexp (optional!).
+    build = "make install_jsregexp",
+    event = "InsertEnter",
+  },
   {'saadparwaiz1/cmp_luasnip'},
   {
     "ray-x/lsp_signature.nvim",
@@ -60,4 +60,25 @@ return {
     end
   },
   "micangl/cmp-vimtex",
+  {
+    "kdheepak/lazygit.nvim",
+    lazy = true,
+    cmd = {
+        "LazyGit",
+        "LazyGitConfig",
+        "LazyGitCurrentFile",
+        "LazyGitFilter",
+        "LazyGitFilterCurrentFile",
+    },
+    -- optional for floating window border decoration
+    dependencies = {
+        "nvim-lua/plenary.nvim",
+    },
+    -- setting the keybinding for LazyGit with 'keys' is recommended in
+    -- order to load the plugin when the command is run for the first time
+    keys = {
+        { "<leader>lg", "<cmd>LazyGit<cr>", desc = "LazyGit" }
+    },
+  },
+  "lewis6991/gitsigns.nvim",
 }
