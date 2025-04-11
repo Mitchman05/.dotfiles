@@ -1,6 +1,9 @@
 vim.opt["tabstop"] = 4
 vim.opt["shiftwidth"] = 4
 
+vim.opt.ignorecase = true
+vim.opt.smartcase = true
+
 require('mini.surround').setup()
 require('mini.comment').setup()
 require('mini.surround').setup()
