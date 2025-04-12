@@ -48,7 +48,7 @@ map({'n', 'v'}, "j", "gj", opts)
 map({'n', 'v'}, "k", "gk", opts)
 
 -- Write and quit binds
-map("n", "<Leader>q", ":wq<CR>", opts)
+map("n", "<Leader>q", ":q<CR>", opts)
 map("n", "<Leader>Q", ":q!<CR>", opts)
 map("n", "<Leader>w", ":w<CR>", opts)
 
@@ -81,7 +81,7 @@ map("n", "<C-a>", "<nop>")
 -- TERMINAL BINDINGS
 
 -- Exiting the terminal
-map("t", "<ESC>", "<C-\\><C-n>", opts)
+map("t", "<S-ESC>", "<C-\\><C-n>", opts)
 
 -- Movement
 map("t", "<C-w>h", "<CMD>wincmd h<CR>", opts)
