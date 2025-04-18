@@ -4,6 +4,7 @@ vim.g.tex_flavor = "latex"
 
 require'lspconfig'.clangd.setup{}
 require'lspconfig'.html.setup{}
+require'lspconfig'.pyright.setup{}
 
 require("nvim-ts-autotag").setup({
   opts = {
