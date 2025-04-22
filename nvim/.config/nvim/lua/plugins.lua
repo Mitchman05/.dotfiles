@@ -100,4 +100,15 @@ return {
     lazy = false,
   },
   "windwp/nvim-ts-autotag",
+  {
+    "epwalsh/obsidian.nvim",
+    version = "*",
+    ft = "markdown",
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+      "hrsh7th/nvim-cmp",
+      "ibhagwan/fzf-lua",
+      "nvim-treesitter/nvim-treesitter",
+    },
+  },
 }
