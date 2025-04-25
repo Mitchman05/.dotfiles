@@ -3,6 +3,10 @@ require("obsidian").setup({
 
   nodes_subdir = "notes",
 
+  note_id_func = function(title)
+    return title
+  end,
+
   completion = {
     nvim_cmp = true,
     min_chars = 2,
