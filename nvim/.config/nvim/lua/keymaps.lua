@@ -43,6 +43,15 @@ map('n', '<Leader>lw', function()
   end, opts
 )
 
+-- LSP binds
+map("n", "K", vim.lsp.buf.hover, opts)
+map("n", "gd", vim.lsp.buf.definition, opts)
+map("n", "gi", vim.lsp.buf.implementation, opts)
+map("n", "gr", vim.lsp.buf.references, opts)
+map("n", "<Leader>er", vim.lsp.buf.rename, opts)
+map("n", "<Leader>ef", vim.lsp.buf.format, opts)
+map("n", "<Leader>ek", vim.diagnostic.open_float, opts)
+
 -- Movement binds
 map({'n', 'v'}, "j", "gj", opts)
 map({'n', 'v'}, "k", "gk", opts)
