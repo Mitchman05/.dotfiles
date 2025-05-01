@@ -31,7 +31,7 @@ map("n", "<Leader>fk", "<CMD>FzfLua keymaps<CR>", opts)
 
 -- NORMAL NEOVIM BINDS
 
--- Map <Leader>vW to show lines over 80 characters
+-- Map <Leader>lW to show lines over 80 characters
 local matchID = 0
 map('n', '<Leader>lw', function()
   if (matchID == 0) then
