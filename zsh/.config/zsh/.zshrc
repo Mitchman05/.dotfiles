@@ -6,6 +6,9 @@ antidote load
 ZSH_AUTOSUGGEST_STRATEGY=(match_prev_cmd history completion)
 autoload -U compinit && compinit
 
+# Set zsh-fast-syntax-highlighting theme
+fast-theme -q XDG:catppuccin-mocha
+
 # Include aliases
 source ${ZDOTDIR}/aliases
 
