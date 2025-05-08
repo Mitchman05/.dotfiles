@@ -1,0 +1,30 @@
+#!/usr/bin/env bash
+
+# System
+alias shutdown="sudo shutdown now"
+alias restart="systemctl reboot"
+alias sleep="systemctl hibernate"
+
+# File management
+alias cp="cp -iv"
+alias mv="mv -iv"
+alias rm="rm -iv"
+
+# ls
+alias ls="lsd"
+alias la="lsd -A"
+
+# vim
+alias vi="nvim"
+alias vim="nvim"
+
+# lazygit
+alias lg="lazygit"
+
+# reload configs
+alias "reload_tmux"="tmux source ~/.config/zsh/.zshrc"
+alias "reload_zsh"="exec zsh"
+
+# Directory stack
+alias d="dirs -v"
+for index ({1..9}) alias "$index"="cd +${index}"; unset index
