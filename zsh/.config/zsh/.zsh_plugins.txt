@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+# Completions
+zsh-users/zsh-autosuggestions
+
+# Syntax highlighting
+zdharma-continuum/fast-syntax-highlighting

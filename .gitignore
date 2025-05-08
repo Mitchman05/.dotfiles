@@ -11,4 +11,6 @@ audiooutbuttons.yuck
 # Don't track lazy-nvim current package versions
 lazy-lock.json
 tmux/.config/tmux/plugins
-misc/.config/mimeapps.list
+zsh/.config/zsh/.zcompdump
+zsh/.config/zsh/.zhistory
+zsh/.config/zsh/.zsh_plugins.zsh
