@@ -31,5 +31,8 @@ if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] &&
   exec tmux
 fi
 
+# Run fetch
+exec fastfetch
+
 # Start starship
 eval "$(starship init zsh)"
