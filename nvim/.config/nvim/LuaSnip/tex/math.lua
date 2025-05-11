@@ -6,7 +6,7 @@ return {
   -- Subscripts and superscripts
   s(
     {
-      trig = "([%w%)%]%}])%'",
+      trig = ";'",
       regTrig = true,
       wordTrig = false,
       dscr = "Superscript",
@@ -471,7 +471,7 @@ return {
       snippetType = "autosnippet",
     },
     fmta(
-      "<>$<>$ ",
+      "<>$<>$",
       {
         f( function(_, snip) return snip.captures[1] end),
         d(1, get_visual),
