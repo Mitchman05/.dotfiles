@@ -204,7 +204,7 @@ return {
 
   s(
     {
-      trig = "tks",
+      trig = "tkz",
       dscr = "Tikz graphics environment",
       snippetType = "autosnippet",
       condition = line_begin
