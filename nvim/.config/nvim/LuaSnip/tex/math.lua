@@ -73,6 +73,57 @@ return {
     )
   ),
 
+  s(
+    {
+      trig = '([%a%)%]%}])11',
+      dscr = "Automatic 1 subscript",
+      regTrig = true,
+      wordTrig = false,
+      snippetType="autosnippet",
+      condition = tex_utils.in_mathzone
+    },
+    fmta(
+      "<>_{1}",
+      {
+        f( function(_, snip) return snip.captures[1] end ),
+      }
+    )
+  ),
+
+  s(
+    {
+      trig = '([%a%)%]%}])22',
+      dscr = "Automatic square",
+      regTrig = true,
+      wordTrig = false,
+      snippetType="autosnippet",
+      condition = tex_utils.in_mathzone
+    },
+    fmta(
+      "<>^{2}",
+      {
+        f( function(_, snip) return snip.captures[1] end ),
+      }
+    )
+  ),
+
+  s(
+    {
+      trig = '([%a%)%]%}])33',
+      dscr = "Automatic square",
+      regTrig = true,
+      wordTrig = false,
+      snippetType="autosnippet",
+      condition = tex_utils.in_mathzone
+    },
+    fmta(
+      "<>^{3}",
+      {
+        f( function(_, snip) return snip.captures[1] end ),
+      }
+    )
+  ),
+
 
   -- Semantic Commands
   s(
