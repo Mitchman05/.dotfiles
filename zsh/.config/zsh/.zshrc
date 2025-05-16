@@ -26,6 +26,9 @@ export KEYTIMEOUT=1
 # Set vim cursor
 source ${ZDOTDIR}/vim_cursor
 
+# Setup zoxide
+eval "$(zoxide init zsh --cmd cd)"
+
 # Start tmux
 if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
   exec tmux
