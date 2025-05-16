@@ -204,6 +204,25 @@ return {
 
   s(
     {
+      trig = "lma",
+      dscr = "Amsmath lemma environment",
+      snippetType = "autosnippet",
+      condition = line_begin
+    },
+    fmta(
+      [[
+        \begin{lemma}
+            <>
+        \end{lemma}
+      ]],
+      {
+        i(0),
+      }
+    )
+  ),
+
+  s(
+    {
       trig = "tkz",
       dscr = "Tikz graphics environment",
       snippetType = "autosnippet",
