@@ -6,7 +6,7 @@ return {
   -- Subscripts and superscripts
   s(
     {
-      trig = ";'",
+      trig = "([%w%)%]%}]);'",
       regTrig = true,
       wordTrig = false,
       dscr = "Superscript",
