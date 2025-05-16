@@ -28,3 +28,13 @@ alias "reload_zsh"="exec zsh"
 # Directory stack
 alias d="dirs -v"
 for index ({1..9}) alias "$index"="cd +${index}"; unset index
+
+function y() {
+	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
+	yazi "$@" --cwd-file="$tmp"
+	if cwd="$(command cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
+		builtin cd -- "$cwd"
+	fi
+	rm -fq -- "$tmp"
+}
+alias yazi="y"
