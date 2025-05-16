@@ -111,4 +111,5 @@ return {
       "nvim-treesitter/nvim-treesitter",
     },
   },
+  {'vuciv/golf'},
 }
