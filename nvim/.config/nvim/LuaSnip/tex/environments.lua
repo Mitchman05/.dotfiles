@@ -101,7 +101,7 @@ return {
       ]],
       {
         f( function(_, snip) return snip.captures[1] end),
-        i(0)
+        i(1)
       }
     )
   ),
@@ -118,7 +118,7 @@ return {
         \begin{pmatrix} <> \end{pmatrix}
       ]],
       {
-        i(0)
+        i(1)
       }
     )
   ),
