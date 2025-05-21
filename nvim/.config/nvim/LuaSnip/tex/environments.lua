@@ -86,7 +86,7 @@ return {
 
   s(
     {
-      trig = "([^%\\?])pm",
+      trig = "([^%\\l])pm",
       dscr = "Pmatrix environment",
       regTrig = true,
       wordTrig = false,
