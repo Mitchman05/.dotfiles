@@ -108,6 +108,23 @@ return {
 
   s(
     {
+      trig = "lpm",
+      dscr = "Inline pmatrix environment",
+      snippetType = "autosnippet",
+      condition = tex_utils.in_mathzone
+    },
+    fmta(
+      [[
+        \begin{pmatrix} <> \end{pmatrix}
+      ]],
+      {
+        i(0)
+      }
+    )
+  ),
+
+  s(
+    {
       trig = "prf",
       dscr = "Amsmath proof environment",
       snippetType = "autosnippet",
