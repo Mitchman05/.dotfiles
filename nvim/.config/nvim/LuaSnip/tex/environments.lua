@@ -125,6 +125,84 @@ return {
 
   s(
     {
+      trig = "([^%\\l])bm",
+      dscr = "Bmatrix environment",
+      regTrig = true,
+      wordTrig = false,
+      snippetType = "autosnippet",
+      condition = tex_utils.in_mathzone
+    },
+    fmta(
+      [[
+        <>\begin{bmatrix}
+            <>
+        \end{bmatrix}
+      ]],
+      {
+        f( function(_, snip) return snip.captures[1] end),
+        i(1)
+      }
+    )
+  ),
+
+  s(
+    {
+      trig = "lbm",
+      dscr = "Inline bmatrix environment",
+      snippetType = "autosnippet",
+      condition = tex_utils.in_mathzone
+    },
+    fmta(
+      [[
+        \begin{bmatrix} <> \end{bmatrix}
+      ]],
+      {
+        i(1)
+      }
+    )
+  ),
+
+  s(
+    {
+      trig = "([^%\\l])vm",
+      dscr = "Vmatrix environment",
+      regTrig = true,
+      wordTrig = false,
+      snippetType = "autosnippet",
+      condition = tex_utils.in_mathzone
+    },
+    fmta(
+      [[
+        <>\begin{vmatrix}
+            <>
+        \end{vmatrix}
+      ]],
+      {
+        f( function(_, snip) return snip.captures[1] end),
+        i(1)
+      }
+    )
+  ),
+
+  s(
+    {
+      trig = "lvm",
+      dscr = "Inline vmatrix environment",
+      snippetType = "autosnippet",
+      condition = tex_utils.in_mathzone
+    },
+    fmta(
+      [[
+        \begin{vmatrix} <> \end{vmatrix}
+      ]],
+      {
+        i(1)
+      }
+    )
+  ),
+
+  s(
+    {
       trig = "prf",
       dscr = "Amsmath proof environment",
       snippetType = "autosnippet",
