@@ -120,7 +120,7 @@ return {
 
   s(
     {
-      trig = "bb",
+      trig = "mbb",
       dscr = "\\mathbb{}",
       snippetType = "autosnippet",
       condition = tex_utils.in_mathzone

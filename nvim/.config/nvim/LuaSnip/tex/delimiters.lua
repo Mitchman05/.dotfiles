@@ -48,4 +48,19 @@ return {
     )
   ),
 
+  s(
+    {
+      trig = "\\<",
+      dscr = "Expand escaped angle bracket",
+      condition = tex_utils.in_mathzone,
+      snippetType = "autosnippet",
+    },
+    fmta(
+      "\\langle <> \\rangle",
+      {
+        d(1, get_visual),
+      }
+    )
+  ),
+
 }

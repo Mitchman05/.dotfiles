@@ -86,7 +86,7 @@ return {
 
   s(
     {
-      trig = "([^%\\?])pm",
+      trig = "([^%\\l])pm",
       dscr = "Pmatrix environment",
       regTrig = true,
       wordTrig = false,
@@ -95,14 +95,108 @@ return {
     },
     fmta(
       [[
-        <>
-        \begin{pmatrix}
+        <>\begin{pmatrix}
             <>
         \end{pmatrix}
       ]],
       {
         f( function(_, snip) return snip.captures[1] end),
-        i(0)
+        i(1)
+      }
+    )
+  ),
+
+  s(
+    {
+      trig = "lpm",
+      dscr = "Inline pmatrix environment",
+      snippetType = "autosnippet",
+      condition = tex_utils.in_mathzone
+    },
+    fmta(
+      [[
+        \begin{pmatrix} <> \end{pmatrix}
+      ]],
+      {
+        i(1)
+      }
+    )
+  ),
+
+  s(
+    {
+      trig = "([^%\\l])bm",
+      dscr = "Bmatrix environment",
+      regTrig = true,
+      wordTrig = false,
+      snippetType = "autosnippet",
+      condition = tex_utils.in_mathzone
+    },
+    fmta(
+      [[
+        <>\begin{bmatrix}
+            <>
+        \end{bmatrix}
+      ]],
+      {
+        f( function(_, snip) return snip.captures[1] end),
+        i(1)
+      }
+    )
+  ),
+
+  s(
+    {
+      trig = "lbm",
+      dscr = "Inline bmatrix environment",
+      snippetType = "autosnippet",
+      condition = tex_utils.in_mathzone
+    },
+    fmta(
+      [[
+        \begin{bmatrix} <> \end{bmatrix}
+      ]],
+      {
+        i(1)
+      }
+    )
+  ),
+
+  s(
+    {
+      trig = "([^%\\l])vm",
+      dscr = "Vmatrix environment",
+      regTrig = true,
+      wordTrig = false,
+      snippetType = "autosnippet",
+      condition = tex_utils.in_mathzone
+    },
+    fmta(
+      [[
+        <>\begin{vmatrix}
+            <>
+        \end{vmatrix}
+      ]],
+      {
+        f( function(_, snip) return snip.captures[1] end),
+        i(1)
+      }
+    )
+  ),
+
+  s(
+    {
+      trig = "lvm",
+      dscr = "Inline vmatrix environment",
+      snippetType = "autosnippet",
+      condition = tex_utils.in_mathzone
+    },
+    fmta(
+      [[
+        \begin{vmatrix} <> \end{vmatrix}
+      ]],
+      {
+        i(1)
       }
     )
   ),
