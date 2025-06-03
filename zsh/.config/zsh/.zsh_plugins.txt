@@ -5,3 +5,6 @@ zsh-users/zsh-autosuggestions
 
 # Syntax highlighting
 zdharma-continuum/fast-syntax-highlighting
+
+# Prompt
+romkatv/powerlevel10k
