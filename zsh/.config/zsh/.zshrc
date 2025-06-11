@@ -2,6 +2,11 @@
 source ${ZDOTDIR}/plugins/antidote/antidote.zsh
 antidote load
 
+# Enable Powerlevel10k instant prompt.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
 # Configuring autosuggest
 ZSH_AUTOSUGGEST_STRATEGY=(match_prev_cmd history completion)
 autoload -U compinit && compinit
@@ -37,5 +42,5 @@ fi
 # Run fetch
 fastfetch
 
-# Start starship
-eval "$(starship init zsh)"
+# To customize prompt, run `p10k configure` or edit ~/.config/zsh/.p10k.zsh.
+[[ ! -f ~/.config/zsh/.p10k.zsh ]] || source ~/.config/zsh/.p10k.zsh
