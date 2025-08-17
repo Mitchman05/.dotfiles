@@ -6,9 +6,9 @@ alias restart="systemctl reboot"
 alias sleep="systemctl hibernate"
 
 # File management
-alias cp="cp -iv"
-alias mv="mv -iv"
-alias rm="rm -iv"
+alias cp="cp -v"
+alias mv="mv -v"
+alias rm="rm -v"
 
 # ls
 alias ls="lsd"
