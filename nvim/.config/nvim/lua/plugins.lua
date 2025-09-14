@@ -112,4 +112,5 @@ return {
     },
   },
   {'vuciv/golf'},
+  'ron-rs/ron.vim',
 }
