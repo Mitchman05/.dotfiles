@@ -42,6 +42,8 @@ cmp.setup({
 			else
 				cmp.select_next_item()
 			end
+		elseif luasnip.jumpable(1) then
+			luasnip.jump(1)
 		elseif has_words_before() then
 			cmp.complete()
 			if #cmp.get_entries() == 1 then
