@@ -110,7 +110,7 @@ return {
   s(
     {
       trig = '([%a%)%]%}])33',
-      dscr = "Automatic square",
+      dscr = "Automatic cube",
       regTrig = true,
       wordTrig = false,
       snippetType="autosnippet",
@@ -118,6 +118,23 @@ return {
     },
     fmta(
       "<>^{3}",
+      {
+        f( function(_, snip) return snip.captures[1] end ),
+      }
+    )
+  ),
+
+  s(
+    {
+      trig = '([%a%)%]%}])invs',
+      dscr = "Automatic inverse",
+      regTrig = true,
+      wordTrig = false,
+      snippetType="autosnippet",
+      condition = tex_utils.in_mathzone
+    },
+    fmta(
+      "<>^{-1}",
       {
         f( function(_, snip) return snip.captures[1] end ),
       }
@@ -150,9 +167,10 @@ return {
       snippetType = "autosnippet",
     },
     fmta(
-      "\\sqrt(<>)",
+      "\\sqrt[<1>]{<2>}",
       {
-        d(1, get_visual)
+        i(1),
+        i(2),
       }
     )
   ),
@@ -298,13 +316,14 @@ return {
   s(
     {
       trig = "smf",
-      dscr = "Sum from negative to positive infinity",
+      dscr = "Sum to infinity",
       condition = tex_utils.in_mathzone,
       snippetType = "autosnippet"
     },
     fmta(
-      "\\sum_{-\\infty}^{\\infty} <>",
+      "\\sum_{<>}^{\\infty} <>",
       {
+        i(1),
         i(0),
       }
     )
@@ -530,5 +549,58 @@ return {
     )
   ),
 
-
+  s(
+    {
+      trig = "RR",
+      dscr = "Real numbers",
+      condition = tex_utils.in_mathzone,
+      snippetType = "autosnippet"
+    },
+    { t("\\mathbb{R}" )}
+  ),
+  s(
+    {
+      trig = "QQ",
+      dscr = "Rational numbers",
+      condition = tex_utils.in_mathzone,
+      snippetType = "autosnippet"
+    },
+    { t("\\mathbb{Q}" )}
+  ),
+  s(
+    {
+      trig = "NN",
+      dscr = "Natural numbers",
+      condition = tex_utils.in_mathzone,
+      snippetType = "autosnippet"
+    },
+    { t("\\mathbb{N}" )}
+  ),
+  s(
+    {
+      trig = "ZZ",
+      dscr = "Integer numbers",
+      condition = tex_utils.in_mathzone,
+      snippetType = "autosnippet"
+    },
+    { t("\\mathbb{I}" )}
+  ),
+  s(
+    {
+      trig = "CC",
+      dscr = "Complex numbers",
+      condition = tex_utils.in_mathzone,
+      snippetType = "autosnippet"
+    },
+    { t("\\mathbb{C}" )}
+  ),
+  s(
+    {
+      trig = "KK",
+      dscr = "Real or Complex numbers",
+      condition = tex_utils.in_mathzone,
+      snippetType = "autosnippet"
+    },
+    { t("\\mathbb{K}" )}
+  ),
 }

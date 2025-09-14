@@ -105,6 +105,21 @@ return {
 
   s(
     {
+      trig = "\"",
+      dscr = "\\text{} (math environment)",
+      snippetType = "autosnippet",
+      condition = tex_utils.in_mathzone
+    },
+    fmta(
+      "\\text{<>}",
+      {
+        d(1, get_visual),
+      }
+    )
+  ),
+
+  s(
+    {
       trig = "bf",
       dscr = "\\mathbf{}",
       snippetType = "autosnippet",
