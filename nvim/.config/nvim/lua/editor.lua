@@ -23,3 +23,11 @@ vim.api.nvim_create_autocmd("FileType", {
 		vim.o.expandtab = true
 	end
 })
+vim.api.nvim_create_autocmd("FileType", {
+	pattern = "tex",
+	callback = function()
+    vim.opt_local.shiftwidth = 4
+		vim.opt_local.tabstop = 4
+		vim.o.expandtab = false
+	end
+})
