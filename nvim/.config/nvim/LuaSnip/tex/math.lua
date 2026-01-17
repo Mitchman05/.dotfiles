@@ -24,7 +24,7 @@ return {
 
   s(
     {
-      trig = "([%w%)%]%}])_",
+      trig = "([%w%)%]%}%|])_",
       regTrig = true,
       wordTrig = false,
       dscr = "Subscript",
