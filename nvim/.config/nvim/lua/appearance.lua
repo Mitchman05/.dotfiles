@@ -1,4 +1,3 @@
-vim.lsp.inlay_hint = true
 vim.wo.number = true
 vim.wo.relativenumber = true
 vim.wo.signcolumn = "yes"

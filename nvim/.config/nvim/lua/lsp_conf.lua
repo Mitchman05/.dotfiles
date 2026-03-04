@@ -1,4 +1,4 @@
-vim.lsp.inlay_hint = true
+vim.lsp.inlay_hint.enabled = true
 
 vim.g.tex_flavor = "latex"
 
