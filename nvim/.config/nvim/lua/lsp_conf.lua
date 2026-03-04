@@ -7,6 +7,7 @@ vim.lsp.enable('html')
 vim.lsp.enable('pyright')
 vim.lsp.enable('eslint')
 vim.lsp.enable('ts_ls')
+vim.lsp.enable('rust_analyzer')
 
 require("nvim-ts-autotag").setup({
   opts = {

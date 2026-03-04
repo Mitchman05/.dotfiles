@@ -12,24 +12,19 @@ return {
 	"hrsh7th/nvim-cmp",
 	"hrsh7th/cmp-nvim-lsp",
   "nvim-lua/plenary.nvim",
-	{
-		"echasnovski/mini.nvim",
-		version = false
-	},
   {
-    'mrcjkb/rustaceanvim',
-    version = '^5', -- Recommended
-    lazy = false, -- This plugin is already lazy
+	  "echasnovski/mini.nvim",
+	  version = false
   },
-	{
-	  "ibhagwan/fzf-lua",
-	  -- optional for icon support
-	  dependencies = { "nvim-tree/nvim-web-devicons" },
-	  -- or if using mini.icons/mini.nvim
-	  -- dependencies = { "echasnovski/mini.icons" },
-	  opts = {}
-	},
-	{
+  {
+    "ibhagwan/fzf-lua",
+    -- optional for icon support
+    dependencies = { "nvim-tree/nvim-web-devicons" },
+    -- or if using mini.icons/mini.nvim
+    -- dependencies = { "echasnovski/mini.icons" },
+    opts = {}
+  },
+  {
     "lukas-reineke/indent-blankline.nvim",
     main = "ibl",
     ---@module "ibl"
