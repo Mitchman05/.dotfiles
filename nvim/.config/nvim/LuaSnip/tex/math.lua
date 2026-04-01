@@ -583,7 +583,7 @@ return {
       condition = tex_utils.in_mathzone,
       snippetType = "autosnippet"
     },
-    { t("\\mathbb{I}" )}
+    { t("\\mathbb{Z}" )}
   ),
   s(
     {
