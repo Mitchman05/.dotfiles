@@ -52,11 +52,4 @@ return {
       {i(1)}
     )
   ), 
-
-  s({trig = "np", dcsr = "\\newpage", condition = line_start,
-    snippetType = "autosnippet"},
-    {t("\\newpage")}
-  ), 
-
-
 }
